@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Yijin.Zhou — pursuing a Master's in Digital Education at XJTLU, fascinated by where kids, play and educational technology meet." />
+  <title>Yijin.Zhou · Home</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ Navigation ============ -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__brand">
+        <span class="nav__brand-dot" aria-hidden="true"></span>
+        Yijin.Zhou
+      </a>
+
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="primary-nav" aria-label="Primary">
+        <ul class="nav__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ Hero ============ -->
+    <section class="hero container">
+      <img
+        class="hero__photo"
+        src="assets/profile.jpg"
+        alt="Headshot of Yijin.Zhou smiling warmly"
+        width="200" height="200"
+      />
+      <p class="hero__wave" aria-hidden="true">👋</p>
+      <p class="hero__tagline">Digital Education</p>
+      <h1 class="hero__name">Hi, I'm Yijin.Zhou</h1>
+      <p class="hero__intro">
+        I'm Yijin. I'm currently pursuing my Master's in Digital Education at
+        XJTLU. I'm fascinated by where kids, play and educational technology
+        meet. Outside of study, I enjoy wandering around, discovering little
+        warm moments in daily life. Always open to new ideas and lovely
+        conversations.
+      </p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="resume.html">View my resume</a>
+        <a class="btn btn--ghost" href="contact.html">Say hello</a>
+      </div>
+    </section>
+
+    <!-- ============ Three things I love ============ -->
+    <section class="section container" id="favorites">
+      <div class="text-center">
+        <span class="eyebrow">A little about me</span>
+        <h2 class="section-title">Three things I love</h2>
+        <p class="section-lead" style="margin-inline:auto;">
+          My favorite movies, songs, and singers.
+        </p>
+      </div>
+
+      <div class="grid grid--3">
+        <div class="card">
+          <h3 style="margin-bottom:.8rem;">🎬 Favorite Movies</h3>
+          <ul>
+            <li>Your Name</li>
+            <li>The Secret World of Arrietty</li>
+            <li>Coco</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3 style="margin-bottom:.8rem;">🎵 Favorite Songs</h3>
+          <ul>
+            <li>Catherine</li>
+            <li>Melody</li>
+            <li>Time Machine</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3 style="margin-bottom:.8rem;">🎤 Favorite Singers</h3>
+          <ul>
+            <li>David Tao</li>
+            <li>Justin Bieber</li>
+            <li>Troye Sivan</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Quick intro / mini CTA ============ -->
+    <section class="section--tight container">
+      <div class="card" style="display:flex; flex-wrap:wrap; gap:1.2rem; align-items:center; justify-content:space-between;">
+        <div style="flex:1 1 320px;">
+          <h2 style="margin-bottom:.4rem;">Want to see what I've been working on?</h2>
+          <p style="margin:0; color:var(--muted);">I keep a small collection of projects — some serious, some just for fun.</p>
+        </div>
+        <a class="btn btn--primary" href="projects.html">Browse projects</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ Footer with fun fact ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__funfact">
+        <strong>Fun fact about me:</strong> I once accidentally sent a thank-you email to 500 people instead of one. Nobody complained — everyone was oddly touched.
+      </div>
+      <ul class="footer__social" aria-label="Social links">
+        <li><a href="contact.html" aria-label="Email">✉️</a></li>
+        <li><a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">🐱</a></li>
+        <li><a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">🔗</a></li>
+      </ul>
+      <p class="footer__copy">© <span id="year">2026</span> Yijin.Zhou · Made with care &amp; coffee.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
